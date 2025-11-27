@@ -25,6 +25,7 @@ def build_application(token: str) -> Application:
 
 
 def run_bot() -> None:
+
     if not settings.TELEGRAM_BOT_TOKEN:
         raise RuntimeError('TELEGRAM_BOT_TOKEN не задан в переменных окружения')
 
