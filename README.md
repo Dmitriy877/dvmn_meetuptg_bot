@@ -17,11 +17,14 @@
   [Документация Django](https://docs.djangoproject.com/en/3.2/ref/settings/#std:setting-DEBUG)
 - **`ALLOWED_HOSTS`** — настройка Django со списком разрешённых адресов.  
   Если запрос прилетит на другой адрес, то сайт ответит ошибкой **400 Bad Request**.  
-  Можно перечислить несколько адресов через запятую, например: `127.0.0.1,192.168.0.1,site.test`
+  Можно перечислить несколько адресов через запятую, например: `127.0.0.1,192.168.0.1,site.test`  
   [Документация Django](https://docs.djangoproject.com/en/3.2/ref/settings/#allowed-hosts)
 - **`DATABASE_URL`** — адрес для подключения к базе данных PostgreSQL.  
   Другие СУБД не поддерживаются.  
   [Формат записи](https://github.com/jacobian/dj-database-url#url-schema)
+- **`TELEGRAM_BOT_TOKEN`** — токен Telegram-бота, полученный от @BotFather.  
+  Используется для запуска и авторизации бота в API Telegram.  
+  [Документация Telegram](https://core.telegram.org/bots/faq#how-do-i-create-a-bot)
 
 
 # Запустить сайт для локальной разработки
